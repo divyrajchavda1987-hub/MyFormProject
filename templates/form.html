@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 50px;
+    }
+    form {
+      max-width: 400px;
+      background: #f2f2f2;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+    }
+    button {
+      background: blue;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: darkblue;
+    }
+  </style>
+</head>
+<body>
+  <h2>Enter Your Details</h2>
+  <form action="/submit" method="POST">
+    <label>First Name:</label><br>
+    <input type="text" name="first_name" required><br>
+
+    <label>Last Name:</label><br>
+    <input type="text" name="last_name" required><br>
+
+    <label>Age:</label><br>
+    <input type="number" name="age" required><br>
+
+    <label>Village:</label><br>
+    <input type="text" name="village" required><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
